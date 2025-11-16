@@ -1,0 +1,18 @@
+﻿spring:
+  application:
+    name: admin-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/codex_admin?useSSL=false&serverTimezone=UTC
+    username: root
+    password: abc123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8086
+
+

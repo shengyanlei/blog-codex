@@ -1,0 +1,29 @@
+﻿spring:
+  application:
+    name: interaction-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/codex_interaction?useSSL=false&serverTimezone=UTC
+    username: root
+    password: abc123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+server:
+  port: 8083
+
+management:
+  health:
+    redis:
+      enabled: false
+    rabbit:
+      enabled: false
+
+

@@ -1,0 +1,31 @@
+﻿spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/codex_auth?useSSL=false&serverTimezone=UTC
+    username: root
+    password: abc123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+auth:
+  jwt:
+    secret: "changemechangemechangemechangeme"
+    access-token-ttl-seconds: 900
+
+management:
+  health:
+    redis:
+      enabled: false
+    rabbit:
+      enabled: false
+
+
