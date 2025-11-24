@@ -1,0 +1,52 @@
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.backButton {
+    margin-bottom: var(--spacing-6);
+}
+
+.header {
+    margin-bottom: var(--spacing-8);
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-4);
+    color: var(--color-text-main);
+}
+
+.meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-6);
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-main);
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-4);
+    color: var(--color-text-main);
+}
+
+.content p {
+    margin-bottom: var(--spacing-4);
+}
