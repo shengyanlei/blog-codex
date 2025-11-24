@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: seo-service
+
+server:
+  port: 8085

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: analytics-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/codex_analytics?useSSL=false&serverTimezone=UTC
+    username: root
+    password: abc123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8087

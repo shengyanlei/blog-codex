@@ -1,0 +1,14 @@
+import React from 'react';
+
+const Settings = () => {
+    return (
+        <div>
+            <h1 className="text-2xl font-bold mb-4">System Settings</h1>
+            <div className="card p-8 text-center text-gray-500">
+                System configuration features coming soon.
+            </div>
+        </div>
+    );
+};
+
+export default Settings;
