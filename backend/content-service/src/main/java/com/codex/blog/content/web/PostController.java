@@ -52,4 +52,14 @@ public class PostController {
         PostDto dto = postService.publish(id, request == null ? null : request.getPublishAt());
         return ResponseEntity.ok(ApiResponse.success(dto));
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ApiResponse<PostDto>> getById(@PathVariable Long id) {
+        return ResponseEntity.ok(ApiResponse.success(postService.getById(id)));
+    }
+
+    @GetMapping("/slug/{slug}")
+    public ResponseEntity<ApiResponse<PostDto>> getBySlug(@PathVariable String slug) {
+        return ResponseEntity.ok(ApiResponse.success(postService.getBySlug(slug)));
+    }
 }

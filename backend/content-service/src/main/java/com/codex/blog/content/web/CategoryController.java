@@ -101,6 +101,18 @@ public class CategoryController {
         return ResponseEntity.ok(response);
     }
 
+    @GetMapping("/slug/{slug}")
+    public ResponseEntity<Map<String, Object>> getCategoryBySlug(@PathVariable String slug) {
+        Category category = categoryService.getCategoryBySlug(slug);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", 0);
+        response.put("message", "成功");
+        response.put("data", category);
+
+        return ResponseEntity.ok(response);
+    }
+
     @GetMapping("/{id}/children")
     public ResponseEntity<Map<String, Object>> getChildCategories(@PathVariable Long id) {
         List<Category> children = categoryService.getChildCategories(id);

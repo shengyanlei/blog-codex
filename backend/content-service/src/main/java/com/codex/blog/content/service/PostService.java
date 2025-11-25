@@ -61,6 +61,20 @@ public class PostService {
         return toDto(post);
     }
 
+    @Transactional(readOnly = true)
+    public PostDto getById(Long id) {
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new BusinessException(PostErrors.POST_NOT_FOUND));
+        return toDto(post);
+    }
+
+    @Transactional(readOnly = true)
+    public PostDto getBySlug(String slug) {
+        Post post = postRepository.findBySlug(slug)
+                .orElseThrow(() -> new BusinessException(PostErrors.POST_NOT_FOUND));
+        return toDto(post);
+    }
+
     private Set<Tag> resolveTags(List<String> tags) {
         if (tags == null || tags.isEmpty()) {
             return new HashSet<>();

@@ -16,7 +16,7 @@ export const PostCard = ({ post }) => {
                         <Calendar size={14} /> {post.date}
                     </span>
                 </div>
-                <Link to={`/posts/${post.slug}`} className={styles.titleLink}>
+                <Link to={`/post/${post.slug}`} className={styles.titleLink}>
                     <h2 className={styles.title}>{post.title}</h2>
                 </Link>
                 <p className={styles.excerpt}>{post.excerpt}</p>
