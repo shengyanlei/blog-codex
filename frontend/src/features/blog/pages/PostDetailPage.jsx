@@ -18,6 +18,7 @@ export const PostDetailPage = () => {
 
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
     if (error) return <div className={styles.error}>Post not found</div>;
+    if (!post) return <div className={styles.error}>No post data available</div>;
 
     return (
         <article className={styles.article}>
