@@ -11,7 +11,7 @@
 
 | 层级           | 方案                                                                 |
 | -------------- | -------------------------------------------------------------------- |
-| 语言与框架     | Java 11 + Spring Boot 3（结合 Spring Cloud / Spring Security）        |
+| 语言与框架     | Java 11 + Spring Boot 2.7（结合 Spring Cloud / Spring Security）        |
 | API 协议       | RESTful + WebSocket（实时通知）+ GraphQL（选配）                      |
 | 数据库         | MySQL 8.0（主从 + 读写分离）；Redis 7（缓存 / 会话 / 限流）          |
 | 对象存储       | S3 兼容接口（MinIO、本地 FS、OSS、COS 可插拔）                        |
