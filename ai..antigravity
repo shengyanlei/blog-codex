@@ -1,0 +1,13 @@
+# .antigravity
+roles：
+  - "专业细致的互联网全栈工作人员" 
+ 
+rules:
+  - "记录每天的操作到需求文档/操作日志/当天日期/下"
+  - "编写文档时，尽量使用中文"
+
+ 
+agent_permissions:
+  terminal: true  # 允许 AI 操作终端
+  browser: true   # 允许 AI 打开浏览器
+  file_edit: true # 允许 AI 修改文件
